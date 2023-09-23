@@ -16,4 +16,4 @@
 
 </div>
 <h2>:bookmark_tabs: Descrição</h2>
-<p>Meu portfólio. Aplicação criada para mostrar os projetos que irei desenvolver durante minha carreira. E testando minhas habilidades.</p>
+<p>Meu portfólio. Aplicação criada para mostrar os projetos que irei desenvolver durante minha carreira.</p>
