@@ -1,0 +1,388 @@
+/* barra de navegação */
+body {
+    margin: 0;
+    border: 0;
+    background-color: #121212;
+    color: white;
+    font-family: 'Mooli', sans-serif;
+    letter-spacing: 1px;
+        overflow-x: hidden;    
+  }
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+   
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1b1b1b;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #beb9b9;
+  }
+
+  nav {
+    width: 60%;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+    font-size: 16px;
+    transition: ease-in-out 0.5s;
+    font-family: 'Mooli', sans-serif;
+}
+
+a:hover {
+    color: #6c10d6;
+    text-decoration: underline;
+}
+
+.logoesquerda {
+    position: absolute;
+    left: 5%;
+}
+
+.direita {
+    padding: 0;
+    margin-left: 50%;
+    margin-top: 5px;
+}
+
+.direita li {
+    margin-bottom: 10px; 
+    margin-right: -50%;
+}
+
+
+.barra {
+    width: 100%;
+    background-color: black; 
+    position: fixed;
+    top: 0;
+    z-index: 1;
+   }
+
+.barra-conteiner {
+    padding: 0 15%;
+    display: flex;
+    align-items: center;
+    background-color: #151515;
+    border-bottom: 2px solid #272727ec;
+    font-weight: bold;
+    height: 80px;
+    transition: 0.3s;
+}
+
+.centralizador {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#inicio {
+    background: solid #121212;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.altura-ajuste{
+    width: 100%;
+}
+
+.ajustador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.apresentacao {
+    max-width: 741px;
+    color:#ffffff;
+    margin-left: -55px;
+}
+
+.descricao {
+    font-size: 25px;
+    grid-area: descricao;
+    font-family: 'Mooli', sans-serif;
+}
+
+.meu-nome {
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Mooli', sans-serif;
+}
+
+.linkedin {
+    width: 359px;
+    height: 65px;
+    background-color:#8a07e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 62px;
+ 
+  }
+
+.linkedin a {
+    width: 100%;
+    padding: 25px 0;
+    margin-top: -6.5px;
+    font-family: 'Mooli', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.linkedin {
+    display: inline-block;
+    transition: background 0.2s ease-in, padding 0.2s ease-in;
+    position: -webkit-sticky;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0.7em 1.7em;
+    border-radius: 0.5em;
+    background: #6c10d6;
+  }
+  
+  
+.link {
+    font-size:25px;
+    width:50%;
+    text-align: center;
+    padding: 12px 0 ;
+    transition: ease-in-out 0.3s;
+}
+
+.link:hover {
+    letter-spacing: 5px;
+    color: #ffffff;
+}
+
+.logoinicio {
+    width: 300px;
+    grid-area: desenho;
+    position: relative; 
+}
+
+.logo2 {
+    width: 320px;
+    height: 320px;
+    transition: transform 0.5s ease; 
+}
+
+
+.logoinicio:hover .logo2 {
+    transform: scale(1.1); 
+}
+
+
+.fecha-menu {
+    display: none;
+}
+
+.meu-nome::after{
+    content: '|';
+    margin-left: 2px;
+    font-weight: bold;
+    font-size: 40px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1325px) {
+    
+    #inicio{
+        background: #000000;
+        height: auto;
+      
+    }
+
+    .ajustador {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .eu {
+        padding: 100px 0;
+    }
+
+    .apresentacao {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .linkedin {
+        width: 479px;
+        margin-top: 15px;
+    }
+
+    .esquerda {
+        margin-left: 15px;
+    }
+
+    .direita {
+        margin-right: 15px;
+    }
+
+}
+
+
+@media (max-width: 880px) {
+    .eu {
+        padding: 25px 0;
+    }
+
+    .altura-ajuste{
+        display: flex;
+        justify-content: center;
+    }
+    .organizador {
+        max-width: 300px;
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-areas:  
+        "desenho"
+        "descricao";
+        line-height: 35px;
+    }
+
+    #inicio {
+        display: flex;
+        justify-content: center;
+    }
+
+    .eu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .descricao {
+        font-size: 20px;
+    }
+
+    .meu-nome {
+        font-size: 30px;
+    }
+
+    .esquerda, .direita {
+        margin: 0;
+    }
+
+    .logo {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .barra{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-centro{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .centralizador{
+        margin: 0;
+    }
+    .barra-conteiner {
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .barra-conteiner .logo{
+        width: 100%
+    }
+
+    .direita ul {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .direita ul a {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 460px){
+
+    .barra-conteiner {
+        padding: 0 5%; 
+    }
+
+   
+    .logoesquerda {
+        display: none;
+    }
+
+    
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+
+    .apresentacao {
+        max-width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .meu-nome {
+        font-size: 36px;
+    }
+
+    .linkedin {
+        width: 100%;
+    }
+
+
+    .logoinicio {
+        width: 200px;
+    }
+}

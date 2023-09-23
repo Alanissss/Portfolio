@@ -1,0 +1,58 @@
+
+.footer {
+    width: 100%;
+    background-color: #121212;
+    margin-top: 5px;
+    height: 80px;
+}
+
+.footer-conteiner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato-creditos {
+    color: white;
+    font-family: 'Mooli', sans-serif;
+    font-size: 15px;
+    padding: 10px 0;
+    margin-left: -35px;
+    
+}
+
+.icons {
+    display: flex;
+    gap: 25px;
+    margin-top: 5px;
+}
+
+@media (max-width:1325px) {
+    .contato-creditos{
+        text-align: center;
+    }
+    
+    .footer-conteiner {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+   
+}
+
+.links1, .links2 {
+    height: 52px;
+    width: 52px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.links:hover {
+    transform: rotate(-360deg);
+}
+
