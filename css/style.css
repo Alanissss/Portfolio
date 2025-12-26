@@ -4,13 +4,28 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    cursor: none;
 }
 
+.cursor-custom {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 36px;
+       height: 36px;
+       border-radius: 50%;
+       pointer-events: none;
+       z-index: 9999;
+       border: 1px solid rgb(121, 121, 121);
+       background-color: transparent;
+       mix-blend-mode: difference;
+       transition: transform 0.1s ease;
+       cursor: none;
+}
 
 
 html, body {
     height: 100%;
-   
 }
 
 header {
@@ -35,7 +50,10 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+
 
 .center span b {
     font-size: 25px;
@@ -54,7 +72,17 @@ header {
     color: black;
     font-size: 18px;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 10px;
+    border-radius: 15px;
 }
+
+.center a:hover {
+    cursor: none;
+    background-color: black;
+    color: white;
+}   
 
 .contato {
     background-color: black;
@@ -64,12 +92,13 @@ header {
     font-weight: bold;
     border: none;
     border-radius: 15px;
+    height: 50px;
     margin: 8px;
     transition: transform 0.3s ease;
 }
 
 .contato:hover {
-    cursor: pointer;
+    cursor: none;
     transform: scale(1.1);
 }
 
@@ -104,3 +133,54 @@ header {
     text-align: right;
 }
 
+.right-text h3 {
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.right-text h3:hover {
+    cursor: none;
+    transform: translateX(-20px);
+    opacity: 0.9;
+}
+
+.right-text p {
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.right-text p:hover {
+    cursor: none;
+    transform: translateX(-20px);
+    opacity: 0.9;
+}
+
+
+.sobre {
+    background-color: black;
+    height: 100vh;
+    color: white;
+    display: flex;
+    text-align: justify;
+}
+
+.sobre h2 { 
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.sobre p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.right {
+    float: right;
+    width: 50%;
+    margin: 0 40px;
+}
+
+.left-text {
+    margin: 35px 0;
+    align-self: flex-end;
+}
