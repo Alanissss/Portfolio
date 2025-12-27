@@ -32,13 +32,9 @@ body {
 header {
     width: 100%;
     height: 70px;
-
-    /* GRADIENTE */
     background: linear-gradient(to bottom,
             rgba(0, 0, 0, 0.3),
             transparent);
-
-    /* efeito de vidro */
     backdrop-filter: blur(6px);
 
     transition: all 0.5s ease;
@@ -456,4 +452,113 @@ footer {
 .copy-notification.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* RESPONSIVO MOBILE */
+@media (max-width: 768px) {
+
+    /* Header */
+    .center {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .center nav {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    header span {
+        display: none;
+    }
+
+    /* Banner */
+    .center-banner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+    }
+
+    .center-banner h1 {
+        font-size: 2rem;
+    margin: 0 auto;
+    }
+
+    .right-text {
+                align-self: center;
+        text-align: justify;
+      
+        width: 96%;
+    }
+
+    /* Sobre */
+    .sobre {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .sobre .center {
+        flex-direction: column;
+    }
+
+    .sobre .right {
+        float: none;
+        width: 80%;
+    }
+
+    .right h1 {
+        font-size: 1.2rem;
+    }
+
+    .habilidades-tecnicas h2 {
+        font-size: 1.5rem;
+    }
+
+    .sobre .left-text {
+        align-self: center;
+        text-align: center;
+    }
+
+    /* Habilidades */
+    .habilidades {
+        height: auto;
+    }
+
+    .center-habilidades {
+        flex-direction: column;
+    }
+
+    .habilidades-container {
+        float: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .habilidades-tecnicas {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .habilidades-card button {
+        max-width: 100%;
+        
+    }
+
+    /* Projetos */
+    .projetos-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .projetos-card {
+        min-width: 280px;
+        max-width: 90%;
+    }
+
+ 
+    html {
+        font-size: 90%;
+      
+    }
 }
