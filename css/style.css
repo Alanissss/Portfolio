@@ -457,6 +457,10 @@ footer {
 /* RESPONSIVO MOBILE */
 @media (max-width: 768px) {
 
+    .cursor-custom {
+        display: none;
+    }
+
     /* Header */
     .center {
         flex-direction: column;
