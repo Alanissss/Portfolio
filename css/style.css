@@ -457,10 +457,6 @@ footer {
 /* RESPONSIVO MOBILE */
 @media (max-width: 768px) {
 
-    .container-banner, .sobre {
-        height: 100vh;
-    }
-
     .cursor-custom {
         display: none;
     }
